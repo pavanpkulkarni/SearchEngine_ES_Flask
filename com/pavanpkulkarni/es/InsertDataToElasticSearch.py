@@ -1,6 +1,8 @@
 import requests, json, os
 from elasticsearch import Elasticsearch, helpers
 
+# User: Pavan.Kulkarni
+# Date: 11/02/2019
 
 es = Elasticsearch('http://localhost:9200')
 iinputPath = "/Users/pavanpkulkarni/Documents/ELK/sample_data"
