@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>My Search Engine APP</h2>
+<form action="{{ url_for('search') }}" method=post>
+
+    {{ form.q.label }}
+    {{ form.q }}
+    <br><br>
+    {{ form.submit }}
+    <br><br>
+    {{ form.search_all }}
+
+    <pre>
+        {{response | pprint}}
+    </pre>
+
+</form>
+{% endblock %}
